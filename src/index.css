@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --color-primary-green: #1B5E20;
+  --color-gold-accent: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-dark-deep: #081c15;
+  --color-dark-card: #112b1f;
+  --color-dark-card-hover: #1b3d2d;
+  
+  --font-sans: 'Outfit', 'Noto Sans Bengali', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+.bg-immersive {
+  background-color: #081c15;
+  background-image: radial-gradient(circle at 20% 20%, #112b1f 0%, #081c15 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #081c15;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B5E20;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Glassmorphism templates */
+.glass-effect-dark {
+  background: rgba(17, 43, 31, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-effect-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(27, 94, 32, 0.15);
+}
+
+.glass-nav-dark {
+  background: rgba(8, 28, 21, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.glass-nav-light {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(27, 94, 32, 0.12);
+}
+
+/* Glowing Animations & Shadows */
+.gold-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.45);
+}
+
+.green-glow {
+  box-shadow: 0 0 15px rgba(27, 94, 32, 0.2);
+}
+
+/* Keyframes for animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.1) translate(-50%, -50%);
+    opacity: 0.25;
+  }
+}
+
+.animated-bg-glow {
+  animation: pulseGlow 10s infinite ease-in-out;
+}
+
+/* Multi-language fade effect */
+.lang-fade-enter {
+  opacity: 0;
+  transform: translateY(4px);
+}
+.lang-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 200ms, transform 200ms;
+}

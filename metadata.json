@@ -1,0 +1,6 @@
+{
+  "name": "SASO Prime",
+  "description": "Premium corporate website of SASO Prime under CEO Saiful Islam, showcasing enterprise-level services in Al Khobar and Dammam across Agriculture, Plumbing, Supermarket, Meat, Fish, Vegetables, and Travel & Tourism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

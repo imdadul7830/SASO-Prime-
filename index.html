@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASO Prime | Professional Service, Premium Results</title>
+    
+    <!-- PWA Manifest & Theme Color -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1B5E20" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore SASO Prime corporate website. Heading by CEO Saiful Islam in Al Khobar, Dammam, Saudi Arabia, we provide professional services and premium results across agriculture, pipeline plumbing, supermarkets, and international tourism." />
+    <meta name="keywords" content="SASO Prime, Saiful Islam, Al Khobar, Dammam, Saudi Arabia, Agriculture, Plumbing, Supermarket, Meat Products, Fish, Fruit, Vegetable, Travel, Hajj, Umrah" />
+    <meta name="author" content="SASO Prime" />
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SASO Prime | Professional Service, Premium Results" />
+    <meta property="og:description" content="Saudi Arabia's premiere enterprise spearheaded by CEO Saiful Islam, bringing elite quality benchmarks to retail, infrastructure, agriculture, and travel." />
+    <meta property="og:url" content="https://sasoprime.com" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SASO Prime | Corporate Excellence" />
+    <meta name="twitter:description" content="Providing robust commercial solutions in Al Khobar and Dammam." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Google Analytics Mock Placeholder -->
+    <script>
+      // GA Placeholder Index
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    <!-- Google Search Console Sandbox Placeholder -->
+    <meta name="google-site-verification" content="GSC-SasoPrime-Placeholder-2026" />
+
+    <!-- LocalBusiness Corporate Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "SASO Prime",
+        "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80",
+        "@id": "https://sasoprime.com",
+        "url": "https://sasoprime.com",
+        "telephone": "0530803415",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Al Khobar",
+          "addressLocality": "Dammam",
+          "addressRegion": "Eastern Province",
+          "addressCountry": "SA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "26.2886",
+          "longitude": "50.2104"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "22:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/sasoprime",
+          "https://www.linkedin.com/company/sasoprime"
+        ],
+        "employee": {
+          "@type": "Person",
+          "name": "Saiful Islam",
+          "jobTitle": "CEO"
+        }
+      }
+    </script>
+
+    <!-- Register service worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('SASO Service Worker registered successfully:', reg.scope))
+            .catch(err => console.error('SASO Service Worker registration failed:', err));
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+{
+  "short_name": "SASO Prime",
+  "name": "SASO Prime Corporate",
+  "icons": [
+    {
+      "src": "https://picsum.photos/192",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://picsum.photos/512",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#081c15",
+  "theme_color": "#1B5E20",
+  "display": "standalone",
+  "orientation": "portrait"
+}
